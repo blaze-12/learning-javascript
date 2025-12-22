@@ -2,3 +2,5 @@
 - Set up GitHub repo
 -Learned how git commits work
 -Felt confused but kept going 
+-learned how commit and branches works
+-Got stuck and fixed it
