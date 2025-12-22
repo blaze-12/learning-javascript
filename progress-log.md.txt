@@ -1,4 +1,4 @@
-##Day 1
+##Day 1 (This documentation started today but I've already started javascrip for a while now)
 - Set up GitHub repo
 -Learned how git commits work
 -Felt confused but kept going 
