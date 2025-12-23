@@ -1,0 +1,12 @@
+When writing javascript
+
+Think of what steps to do 
+convert those steps into code
+
+order of operations 
+from top to bottom have higher priority over the other
+1. (...)
+2. * /
+3. + - 
+4. comparison operators
+5. Logical operators
