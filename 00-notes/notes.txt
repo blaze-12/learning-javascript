@@ -10,3 +10,13 @@ from top to bottom have higher priority over the other
 3. + - 
 4. comparison operators
 5. Logical operators
+
+SCOPES
+Any variable created inside a {...} would remain in that {...}
+
+MORE ON BOOLEANS
+falsy and truthy 
+
+falsy values
+false 0 '' NaN undefined null
+any value not on the list is a truthy value
