@@ -66,6 +66,34 @@
         const result = 0 ? 'truthy' : 'falsy';
         console.log(result);
 
+        const justVariable = 'hehehehe';
+        console.log(justVariable);
+
+        // Guard operator
+        // so since the first value is false it would just stop and not crossover
+        false && console.log('hello');
+
+        //OR OPERATOR or default operator
+        const currency = undefined || 'USD';
+        console.log(currency);
+
+        // 
+        const message = 5 && 'hello';
+        console.log(message);
+
+        // i dunno what i just did.... But it works :D  
+
+        2 > 1 && 0 < 1 ? console.log(true) : console.log(!false);
+
+        // random practice        
+
+        if (2 > 1 && 0 < 1) {
+            console.log(!true);
+        } else {
+            console.log(!false);
+        };
+
     </script>
 </body>
 </html>
+
