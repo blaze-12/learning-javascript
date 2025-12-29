@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin-flip game</title>
+</head>
+<body>
+
+    <script>
+        // Generating Random number
+        const randomNumber = Math.random();
+
+        // saving the result here
+        let result;
+        
+        //Decide if heads or tails
+        if (randomNumber < 0.5) {
+            result = 'heads';
+        } else {
+            result = 'tails';
+        }
+
+        //Your guess
+        const guess = 'heads';
+
+        // check if guess matches result
+        if (guess === result) {
+            console.log('You win!');
+        } else {
+            console.log('You lose!')
+        }
+
+        //TRYIN TERNARY OPERATOR WITH THE CODE ABOVE
+        const randomNumber2 = Math.random();
+
+        let result2 = randomNumber < 0.5 ? 'heads' : 'tails';
+        
+        let guess2 = 'heads';
+
+        console.log(guess === result2 ? 'You win2!' : 'You lose2!');
+    </script>
+</body>
+</html>
