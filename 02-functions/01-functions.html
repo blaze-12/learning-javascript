@@ -12,14 +12,39 @@
     </button>
     
     <script>
-        const button = document.getElementById("colorBtn");
+        // const button = document.getElementById("colorBtn");
 
-        button.addEventListener("click", function () {
-            const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-            document.body.style.backgroundColor = randomColor;
-        });
+        // button.addEventListener("click", function () {
+        //     const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        //     document.body.style.backgroundColor = randomColor;
+        // });
 
+        // function calculateTax(cost, taxPercent = 0.1) {
+        //     console.log(cost * taxPercent);
+        // }
 
+        // calculateTax(2000, 0.2);
+        // calculateTax(5000);
+
+        // Function exercise
+        function greet(name) {
+           console.log(`Hello ${name}`); 
+           if (!name) {
+            console.log("Hi there, what's your name?")
+           }
+        }
+
+        greet('Blaize');
+        greet('Sarah');
+        greet('Mimi');
+        greet();
+
+        // Another one
+        function convertToFahrenheit(celsius) {
+            return (celsius * 9 / 5) + 32;
+        }
+
+        console.log(convertToFahrenheit(25)); // 77
 
     </script>
 </body>
