@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+    
+</head>
+<body>
+    <h1>Cart Quantity</h1>
+
+    <button onclick="
+        console.log(`Cart Quantity : ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick="
+        // cartQuantity = cartQuantity + 1;
+        // Short Cut method
+        updateCartQuantity(1);
+    ">Add to Cart</button>
+
+    <button onclick="
+        //cartQuantity = cartQuantity + 2;
+         // Short Cut method
+        updateCartQuantity(2);
+    ">+2</button>
+
+    <button onclick="
+        updateCartQuantity(3);
+    ">+3</button>
+
+    <button onclick="
+        updateCartQuantity(4);
+    ">+4</button>
+
+    <button onclick="
+        updateCartQuantity(5);
+    ">+5</button>
+
+    <button onclick="
+        updateCartQuantity(-2);
+    ">-2</button>
+
+    <button onclick="
+        updateCartQuantity(-3);
+    ">-3</button>
+
+    <!--
+    I did this myself
+    <button onclick="
+        cartQuantity = cartQuantity * 0;
+        console.log(`Cart Quantity : ${cartQuantity}`)
+    ">Reset Cart</button> -->
+
+    <button onclick="
+        updateCartQuantity(-1);
+    ">Remove from cart</button>
+
+    <button onclick="
+        cartQuantity = 0;
+        console.log('Cart was reset')
+        console.log(`Cart Quantity : ${cartQuantity}`);
+    ">Reset Cart</button>
+
+    <script>
+        let cartQuantity = 0;
+
+        // For addition
+        function updateCartQuantity(update) {
+            if (cartQuantity + update > 10) {
+                alert('The cart is full');
+                return;
+            }
+            
+            if (cartQuantity + update < 0) {
+                alert('Not enough items in the cart');
+                return;
+            }
+
+            cartQuantity += update;
+            console.log(`Cart quantity: ${cartQuantity}`);
+            
+        }
+        // For substraction
+    </script>
+</body>
+</html>
